@@ -1,0 +1,265 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #181d23;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 1600px;
+	height: 100vh;
+	overflow: scroll;
+}
+.active {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.panel {
+	width: 1600px;
+	height: 1000px;
+	border: 1px solid #4b5769;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.panel-left {
+	background-color: #4b5769;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.panel-right {
+	background-image: linear-gradient(180deg, rgba(55, 64, 76, 1) 0%, rgba(21, 26, 32, 1) 100%);
+}
+.info-top h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.date-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 160px;
+}
+.date-box .day {
+	font-size: 2rem;
+}
+.date-box .time {
+	font-size: 4rem;
+	font-weight: bold;
+}
+.date-box .date {
+	font-size: 1.8rem;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 700px;
+}
+.menu a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30%;
+	text-decoration: none;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+	margin-bottom: 1rem;
+}
+.menu a:hover {
+	background-color: transparent;
+	background-image: linear-gradient(160deg, rgba(0, 110, 255, 0.25) 0%, rgba(9, 255, 0, 0.25) 100%);
+}
+.menu-item {
+	color: #fff;
+}
+.menu-item p {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.menu-item i {
+	font-size: 6rem;
+	margin-bottom: 0.4rem;
+}
+.info-box h3 {
+	font-size: 2rem;
+}
+.info-box p {
+	font-size: 1.6rem;
+}
+.statistics-box {
+	text-align: center;
+}
+.statistics-box h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 3rem;
+}
+.statistics-item {
+	height: 140px;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	margin: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.3s;
+}
+.statistics-item:hover {
+	background-color: rgba(255, 255, 255, 0.08);
+}
+.statistics-item h3 {
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+.statistics-item h3 {
+	font-size: 1.2em;
+}
+.main-table h3 {
+	font-size: 1.4rem;
+	color: #fff;
+	font-weight: bold;
+}
+.main-table thead,
+.main-table .dropdown-item {
+	font-size: 1.4rem;
+}
+.page-link {
+	padding: 0.5em 1em;
+	font-size: 1.4rem;
+	background-color: transparent;
+	color: #fff;
+}
+.page-link:hover {
+	background-color: rgba(255, 255, 255, 0.08);
+	color: #ddd;
+}
+.aside h3 {
+	margin-bottom: 1em;
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.logo .logo-text {
+	font-size: 3.4rem;
+	text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+.logo p {
+	font-size: 1.8rem;
+}
+.users-online p,
+.users-gender i {
+	font-size: 4rem;
+}
+.users-gender .fa-male {
+	text-shadow: 0 0 10px #09ff00;
+}
+.users-gender .fa-female {
+	text-shadow: 0 0 10px #006eff;
+}
+.users-gender {
+	font-size: 3rem;
+}
+.monthly-stat .form-select,
+.monthly-stat option {
+	font-size: 1.6rem;
+}
+
+.monthly-stat .info {
+	font-size: 1.8rem;
+}
+.monthly-stat .number {
+	font-size: 1.4rem;
+}
+.posts h3 {
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.featured-post .btn {
+	font-size: 1.6rem;
+}
+.featured-post .card-title {
+	font-size: 1.8rem;
+}
+.featured-post .btn {
+	font-size: 1.4rem;
+}
+.active-users .card-img {
+	overflow: hidden;
+}
+.active-users img {
+	height: 180px;
+	object-fit: cover;
+	opacity: 60%;
+	transition: opacity 0.3s, transform 0.3s;
+}
+.active-users img:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+.active-users .card-body,
+.active-users .btn {
+	font-size: 1.5rem;
+}
+.find-post,
+.find-post .btn,
+.find-post .dropdown-menu,
+.find-post input {
+	font-size: 1.6rem;
+}
+.modal-body h3 {
+	font-weight: bold;
+	font-size: 1.7rem;
+}
+.modal-body p {
+	font-size: 1.3rem;
+}
+.modal-body button {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+.modal-footer button {
+	text-transform: uppercase;
+}
+.users-list li {
+	padding: 0.5em 1em;
+	margin: 0.2em 0;
+	font-size: 2rem;
+}
+.users-list .btn {
+	font-size: 1.6rem;
+}
+.users-list .list-group-item {
+	border: 1px solid #fff;
+}
+.find-users p,
+.find-users input,
+.find-users select {
+	font-size: 1.6rem;
+}
+.find-users button {
+	font-size: 2rem;
+}
+.users-modal label,
+.users-modal p,
+.users-modal input,
+.users-modal select {
+	font-size: 1.6rem;
+}
+.users-modal .btn {
+	font-size: 1.8rem;
+}
